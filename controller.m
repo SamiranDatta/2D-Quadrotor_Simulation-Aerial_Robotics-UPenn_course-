@@ -23,7 +23,7 @@ kv_phi = 10;
 
 phi_c = -(1/params.gravity)*(des_state.acc(1)+kv_y*(des_state.vel(1)-state.vel(1))+kp_y*(des_state.pos(1)-state.pos(1)));
 u1 = params.mass*(params.gravity+des_state.acc(2)+kv_z*(des_state.vel(2)-state.vel(2))+kp_z*(des_state.pos(2)-state.pos(2)));
-u2 = params.Ixx*(kv_phi*(-state.omega(1))+kp_phi*(phi_c-state.rot
+u2 = params.Ixx*(kv_phi*(-state.omega(1))+kp_phi*(phi_c-state.rot))
 
 % FILL IN YOUR CODE HERE
 
